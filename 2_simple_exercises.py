@@ -28,8 +28,8 @@ sampleDict = {
     "emp3": {"name": "Brad", "salary": 6500},
 }
 
-sampleDict["emp1"]["salary"] = 8500
-print(sampleDict["emp1"]["salary"])
+sampleDict["emp3"]["salary"] = 8500
+print(sampleDict["emp3"]["salary"])
 
 # 4 )Given the dictionary below, add a new key - 'work' with the values shown below:
 #       "work": ["Apology", "Phaedo", "Republic", "Symposium"]
