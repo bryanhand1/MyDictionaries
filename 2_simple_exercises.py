@@ -41,7 +41,6 @@ dict = {
     "teacher": "Socrates",
     "student": "Aristotle",
 }
-dict["work"] = {}
 
 dict["work"] = ["Apology", "Phaedo", "Republic", "Symposium"]
 
