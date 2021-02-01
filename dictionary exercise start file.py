@@ -60,13 +60,16 @@ def deal_cards(deck, number):
 
     # Make sure the number of cards to deal is not
     # greater than the number of cards in the deck.
-    if
+    if number > len(deck):
+        print("Sorry there are not enough cards")
+    else:
     
     
 
     # Deal the cards and accumulate their values.
     
-
+        for card in number:
+            
 
     
 
