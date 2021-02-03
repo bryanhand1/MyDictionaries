@@ -82,20 +82,24 @@ def create_deck():
 
 def deal_cards(deck, number):
     # Initialize an accumulator for the hand value.
+    import random
+
     hand_value = 0
+    deck_list = deck.keys()
 
     # Make sure the number of cards to deal is not
     # greater than the number of cards in the deck.
-    if number > len(deck):
+    if number > len(deck_list):
         print("Sorry there are not enough cards")
     else:
 
         # Deal the cards and accumulate their values.
 
-        for card in number:
-            deal = deck.popitem()
+        for card in range(number):
+            deal = random.sample(deck_list, 1)
             print(deal)
-            hand_value = +deal
+            deal_val = deal[0]
+            hand_value += deck[deal_val]
 
     # Display the value of the hand.
 
