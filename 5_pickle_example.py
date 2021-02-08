@@ -6,11 +6,10 @@
 import pickle
 import os
 
-eof = False
-path = 'C:/Users/johnny_bhojwani/Box Sync/MIS 4V98 - PYTHON/Scripts/Chapter 9 - Dictionaries/names_pickle_file.dat'
 
-outfile = open("names_pickle_file.dat","ab")
-infile = open("names_pickle_file.dat","rb")
+path = "names_pickle_file_write.dat"
+outfile = open("names_pickle_file_write.dat", "ab")
+infile = open("names_pickle_file_write.dat", "rb")
 print(os.path.getsize(path))
 input()
 
@@ -19,12 +18,12 @@ if os.path.getsize(path) > 0:
     name = input("Add a name to the list: ")
     names.append(name)
 else:
-    names = []    
+    names = []
     name = input("Add a name to the list: ")
     names.append(name)
 
 
-pickle.dump(names,outfile)
+pickle.dump(names, outfile)
 outfile.close()
 
 print(names)
